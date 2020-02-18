@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.basis {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  max-width: 1140px;
+}
+
+.girl {
+  width: 100vh;
+  width: 20vw;
+  background-image: url(img/pic_logo3.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: visible;
+}
+
+.container {
+  /* position: relative; */
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  flex-grow: 1 !important;
+}
+
+.active>span {
+  color: rgb(231, 114, 0);
+  border-bottom: 3px solid rgb(231, 114, 0);
+}
+
+.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.color {
+  color: rgb(231, 114, 0);
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+header {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  width: 4vw;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+header div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin: 5px 0;
+  z-index: 99;
+}
+
+header img {
+  display: block;
+  max-width: 70%;
+}
+
+header img:hover {
+  max-width: 100%;
+}
+
+[class$="_head"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+}
+
+[class$="_content"] {
+  height: 100%;
+  width: 100%;
+  flex-shrink: 999;
+}
+
+.logo_content {
+  background-image: url(img/name_logo2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 10vh;
+}
+
+.gallery_content_item {
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+  /* border: 2px solid black; */
+}
+
+.foto {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100vh;
+}
+
+.foto div {
+  padding: 3%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  height: 60vh;
+  width: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.foto div img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.foto .center {
+  max-height: 100%;
+  z-index: 1;
+}
+
+.foto .rigth {
+  opacity: 0.33;
+  max-height: 50%;
+  max-width: 50%;
+  transform: translate(50%);
+  -webkit-transform: translate(50%);
+  -moz-transform: translate(50%);
+  -ms-transform: translate(50%);
+  -o-transform: translate(50%);
+}
+
+.foto .left {
+  opacity: 0.33;
+  max-height: 50%;
+  max-width: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.question {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+
+}
+
+.question>div {
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.question>div span {
+  max-width: 50%;
+  padding: 10px;
+  
+}
+
+.question>div>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.callback_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.callback_content > div {
+  display: flex;
+  max-width: 10vh;
+  margin: 5vh;
+}
+
+.callback_content > div img {
+  width: 10vh;
+  height: 10vh;
+}
+
+/* transform: translate(-70%); */
